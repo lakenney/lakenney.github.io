@@ -1,0 +1,286 @@
+
+/* This is a custom css style sheet */
+
+/********************************************
+	Normalize CSS
+	http://necolas.github.com/normalize.css/
+********************************************/
+
+html {
+	height: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body {
+	min-height: 100%;
+}
+
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+audio,
+canvas,
+video {
+	display: block;
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+pre {
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+
+input,
+textarea,
+button,
+select {
+	margin: 0;
+	font-size: 100%;
+	line-height: normal;
+	vertical-align: baseline;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	cursor: pointer;
+	-webkit-appearance: button;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+textarea {
+	overflow: auto;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/********************************************
+	Tag Resets
+********************************************/
+
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* ******************************************
+	Web Fonts
+****************************************** */
+
+@font-face {
+    font-family: 'Roboto Condensed Light';
+    src: url('../fonts/robotocondensed-light-webfont.eot');
+    src: url('../fonts/robotocondensed-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/robotocondensed-light-webfont.woff') format('woff'),
+         url('../fonts/robotocondensed-light-webfont.ttf') format('truetype'),
+         url('../fonts/robotocondensed-light-webfont.svg#RobotoCondensedLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Some custom syling for the footer of this page. Place in custom.css. */
+body {
+	padding-top: 70px;
+}
+footer {
+	padding: 2em 0;
+	margin: 3em 0;
+	border-top: 1px solid #ddd;
+	color: #999;
+	text-align: center;
+}
+a {
+  color: #86d3de;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #999;
+  text-decoration: underline;
+}
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.glyphicon {
+	color: #86d3de;
+}
+.active .glyphicon {
+	color: #cdae51;
+}/*.glyphicon-pushpin, 
+.glyphicon-heart {
+	color: #86d3de;
+}*/
+
+.pull-right.img-responsive {
+	margin: 0 0 1em 1em;
+}
+
+.btn-info {
+    background-color: #86d3de;
+    border-color: #86d3de;
+    color: #FFFFFF;
+}
+
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active,
+.btn-info.active,
+.open .dropdown-toggle.btn-info {
+  color: #ffffff;
+  background-color: #999;
+  border-color: #999;
+}
+.breadcrumb > li + li:before {
+  padding: 5px 5px;
+  color: #ccc;
+  /*content: "/\00a0";*/
+  content: none;
+  top:2px;
+  padding-left: 20px;
+}
+.glyphicon-circle-arrow-right:before {
+content: "\e131";
+padding-left:2px;
+}
+nav {
+	padding-top: 30px;
+}
+
+/* tab styling */
+
+.tab-pane {
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding: 0.8em;
+}
+.tab-pane {
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding: 0.8em;
+}
+
+/* makeTabsFor ... in 05_02b.html */
+
+/* 
+#nav-tabs li {
+	list-style: none;
+}
+#nav-tabs li > a,
+#nav-tabs h3 {
+	float: left;
+	display:inline;
+	padding: 4px;
+	margin-right: 3px;
+	border: 1px solid black;
+	border-bottom-width: 0px;
+	background-color: #EEE;
+	cursor: pointer;
+}
+#nav-tabs ul.active,
+#nav-tabs li.active>a,
+#nav-tabs h3.active {
+	background-color: transparent;
+}
+#nav-tabs li > p {
+	display: none;
+	position: absolute;
+	margin-top: 34px;
+	border: 1px solid black;
+	width: 500px;
+}
+#nav-tabs li > p.active {
+	display: block;
+	position: absolute;
+	background-color:eee;
+}
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:hover, 
+.nav-tabs>li.active>a:focus{
+		background-color: #EEE;
+}
+.nav-tabs>li.active>btn {
+
+}
+*/
+

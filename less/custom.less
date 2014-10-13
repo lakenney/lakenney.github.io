@@ -1,0 +1,188 @@
+
+/* Custom styling for the Bootstrap website. 
+These styles do not ship with Bootstrap. 
+Some are overrides of existing Bootstrap styles, while others are new styles not existing in Bootstrap.
+*/
+
+/* below styles are the default -- take effect at resolutions <768 px */
+
+.logo {
+	padding-top: 5px;
+	text-align: center;
+}
+.tagline {
+	color: @brand-info;
+	font-family: Georgia, serif;
+	font-style: italic;
+	font-size: 1em;
+	text-align: center;
+	padding-top: .6em;
+}
+.glyphicon {
+	color: @glyphicon-color;
+}
+.active .glyphicon {
+	color: #86d3d3;
+}
+
+.pull-right.img-responsive {
+	margin: 0 0 1em 1em;
+}
+
+/* styling thumbnails and modals */
+
+.modal-body .pull-left { 
+    padding-right: 1em; 
+} 
+.modal-body .pull-right { 
+    padding-left: 1em; 
+} 
+.modal-footer { 
+    clear: both; 
+} 
+
+/* Added panel styling for the product page */
+.panel {
+	.panel-body { 
+		padding: @panel-body-padding;
+		&:extend(.clearfix all);
+		color: #31708f;
+		}
+
+		a {
+			color: lighten(@brand-info, 25%);
+			text-decoration: underline;
+		}
+		a:hover {
+			tex-decoration: none;
+		}
+		a.btn-info {
+		background-color: lighten(@brand-info, 25%);
+		color: #31708f;
+		text-decoration: none !important;
+		}
+}
+
+/* from variable.less */
+
+/* form styles */
+.form-group button {
+	margin-top:10px;
+}
+
+/* changed Bootstrap */
+form .col-sm-3,
+form .col-sm-9,
+form .col-sm-2,
+form .col-sm-10 {
+	padding: 10px 0;
+	margin: 0;
+}
+
+.breadcrumb > li + li:before {
+  padding: 5px 5px;
+  color: #ccc;
+  /*content: "/\00a0";*/
+  content: none;
+  top:2px;
+  padding-left: 20px;
+}
+.glyphicon-circle-arrow-right:before {
+content: "\e131";
+padding-left:2px;
+}
+
+/* footer styling for all resolutions */
+
+.siteinfo {
+	text-align: center;
+	padding: 3em 0;
+	border-top: 1px solid #ddd;
+}
+.siteinfo a {
+	text-decoration: none;
+	color: #999;
+	font-size: 0.8em;
+}
+.siteinfo a:hover {
+	color: #602F8D;
+	text-decoration: underline;
+}
+footer {
+	text-align: center;
+	color: #999;
+	border-top: 1px solid #ccc;
+	padding: 2em 0em;
+	margin: 3em 0;
+}
+
+/* carousel styling */
+
+.carousel-control.left {
+	background-image: none;
+}
+.carousel-control.right {
+	background-image: none;
+}
+
+/* tab styling */
+.tab-pane {
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding: 0.8em;
+}
+/*.tab-content{
+	border-left: 1px solid @nav-tabs-border-tabs;
+	border-right: 1px solid @nav-tabs-border-tabs;
+	border-bottom: 1px solid @nav-tabs-border-tabs;
+	padding: 0.8em;
+
+}*/
+
+/*.btn-info color changed in variables*/
+
+/* buttons with mixins to quickly change the look of btn  */
+/* I.E. change .btn-secondary to .btn-info */
+/* Or change individual button classes per each btn you want changed */
+.btn-secondary {
+	.button-variant(#fff; @brand-secondary; darken(@brand-secondary, 20%));
+	font-family: 'Shadows Into Light Two', cursive;
+}
+
+
+/* Small devices (tablets, 768px and up) 
+
+Greater than 768 px, push logo left and tagline right. Alter 
+tagline font size, alignment, and padding for larger dimensions.
+
+*/
+@media (min-width: 768px) {  
+	.logo {
+		text-align: left;
+	}
+	.tagline {
+		font-size: 1.5em;
+		text-align: right;
+		padding-top: 1.6em;
+	}
+	form {
+		width: 750px;
+		margin: 0 auto;
+	}
+
+}
+
+/* Changed jumbotron.less */
+/* jumbotron styling */
+  @media screen and (min-width: @screen-sm-min) {
+	.jumbotron h1,
+	.jumbotron .h1 {
+	  font-size: (@font-size-base * 3); /*font-size: (@font-size-base * 4.5);*/
+	}
+}
+
+/* Added border to class of jumbotron in jumbotron.less */
+.jumbotron {
+	border: 1px solid @gray;
+}

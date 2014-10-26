@@ -74,14 +74,14 @@
         <!--Thumbnails-->
           <div class="row" id="thumbnail">
             <ul>
-                <li class="thumbnail col-sm-3 col-xs-6">
+                  <li class="thumbnail col-sm-3 col-xs-6">
                   <a href="#green" data-toggle="modal">
                     <img src="img/pendants.jpg" alt="dragonfly_pendants" class="img-responsive img-rounded">
                   </a>             
                     <div class="caption">
                         <h3>Green Stage</h3>
                         <p>Each of these pieces will become a separate piece of jewelry.</p>
-                        <p><a href="#green" data-toggle="modal" class="btn btn-info btn-xs" role="button">Read more >></a></p>
+                        <p><a href="#green" id="readMore-btn" class="btn btn-info btn-xs green" role="button">Read more >></a></p>
                     </div>
                 </li>
 
@@ -117,7 +117,9 @@
                         <p><a href="#cleanup" data-toggle="modal" class="btn btn-info btn-xs" role="button">Read more >></a></p>
                     </div>
                 </li>
-                <li class="thumbnail col-sm-3 col-xs-6">
+  <!-- Optional: clear the XS cols if their content doesn't match in height -->
+  <div class="clearfix visible-xs-block"></div>
+                  <li class="thumbnail col-sm-3 col-xs-6">
                     <a href="#layout" data-toggle="modal">
                       <img src="img/pendantandbranch.jpg" alt="pendant" class="img-responsive img-rounded">
                     </a>
@@ -262,6 +264,6 @@
   <script src="js/bootstrap.min.js"></script>
   <!-- javascript -->
     <script src="js/jquery.min.js"></script>
-    <script src="js/apps.js"></script>
+    <script src="js/myApps.js"></script>
 </body>
 </html>

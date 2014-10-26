@@ -21,12 +21,20 @@ $(document).ready(function(){
 			});//end cherry image css
 			$('#cherry-btn').css({
 				backgroundColor: 'red'
-				}, $('#cherry-btn').text("Come Back")
-			);//end cherry btn css
-		});//end cherry animate
+			});//end cherry btn css
+			$('#cherry-btn').html({ 
+				text : 'Come Back'
+			});//end cherry-btn html
 
+		});//end cherry animate
 	});//end cherry click
 
+	$('#jumbotron-btn').click(function(){
+		$('#jumbotron-img').removeClass('img-circle').addClass('img-rounded');
+		$('.jumbotron h1').text('Yummy Fruit!');
+		$('.jumbotron p').prepend('<p>You clicked the button and made a new paragraph!</p>');
+		$('#jumbotron-btn').replaceWith('<p><span class="label label-success">Success! You clicked the button.</span></p>');
+	});//end jumbotron img css
 
 	//$('#banana-btn').hover(function(){ }, function(){});
 	$('#banana-btn').hover(function(){ 
@@ -41,7 +49,18 @@ $(document).ready(function(){
 		});//end css
 	}); //end banana hover
 
-
+	//$('#banana-btn').hover(function(){ }, function(){});
+	$('#apple-img').hover(function(){
+		$('#apple-img').attr({
+			'src' : 'img/apples-400.jpg',
+			'class' : 'img-responsive img-circle'
+		});//end attr
+	}, function(){
+		$('#apple-img').attr({
+			'src' : 'img/apple-300.jpg',
+			'class' : 'img-responsive'
+		});//end attr
+	});
 
 }); //end ready
 

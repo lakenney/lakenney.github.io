@@ -18,12 +18,13 @@ Some are overrides of existing Bootstrap styles, while others are new styles not
 	text-align: center;
 	padding-top: .6em;
 }
-.glyphicon {
+/* CAUSING PROBLEMS WITH HAS-ERROR STYLING ON VALIDATION FORM */
+/*.glyphicon {
 	color: @glyphicon-color;
 }
 .active .glyphicon {
 	color: #86d3d3;
-}
+}*/
 
 .pull-right.img-responsive {
 	margin: 0 0 1em 1em;

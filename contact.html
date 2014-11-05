@@ -48,8 +48,8 @@
                     		<li>
                       		<a href="metal-clay.html">metal clay</a>
                     		</li>
-                    		<li><a href="#">sea glass</a></li>
-                    		<li><a href="#">metal smithing</a></li>
+                    		<li><a href="#" data-toggle="tooltip" title="Sea glass demos coming soon!">sea glass</a></li>
+                    		<li><a href="#" data-toggle="tooltip" title="Metal smithing demos coming soon!">metal smithing</a></li>
                   		</ul>
                 	</li>                	
                 	<li><a href="product.html" title="product">product</a></li>         
@@ -60,30 +60,45 @@
 			</nav>
 		</div><!--end row-->
 
-
 		<div class="row">
 			<h2>Contact Me</h2>
 
 			<form role="form">
 		        <fieldset>
 		          <legend>Have more questions?</legend>
-		          <div class="form-group">
-		          	<label for="name" class="col-sm-2">Your name</label>
-		          	<div class="col-sm-10">
-		          		<input type="text" name="name" placeholder="Name" class="form-control" id="name">
-		          	</div>
-		          </div>
 
-		        <div class="form-group">
+					<div class="row">
+
+						<div class="col-sm-6 form-group name-group">
+							<label for="name" class="control-label">
+								Your name:
+								<span class="glyphicon glyphicon-star"></span>
+							</label>
+							<input type="text" id="name" class="form-control">
+          						<span class="help-block"></span>
+          				</div>
+
+						<div class="col-sm-6 form-group email-group">
+							<label for="email" class="control-label">
+								Your email:<span class="glyphicon glyphicon-star"></span>
+							</label>
+							<input type="text" id="email" placeholder="Email" class="form-control">
+							<span class="help-block"></span>
+						</div>
+
+					</div><!--end row-->
+
+		        <div class="form-group search-group">
 		          	<label class="checkbox-inline">
 					<input name="custom" type="checkbox" value="custom" data-toggle="collapse" data-target="#custom">
 		          		I'd like something custom made.</label>
-					<div class="form-group collapse in" id="custom">
+					<div class="form-group collapse in search-group" id="custom">
 
 			            <div class="radio">
 				            <label>
 				            	<input type="radio" name="custom" value="swarovski">
-				        		Swarovski necklace</label>
+				        		Swarovski necklace
+				        	</label>
 				        </div>
 				    	<div class="radio">
 		            		<label>
@@ -100,6 +115,7 @@
 		              			<input type="radio" name="custom" value="soldering">
 		              			soldering</label>
 		              	</div>
+            			<span class="help-block"></span>
 
 		              	<div class="radio">
 		            		<label>
@@ -124,15 +140,13 @@
 		              	</div>
 
 					<div>
-		          		<label for="contact-info" class="col-sm-3">
+		          		<label for="contact-info">
 		          			Best way to contact you.
 		          		</label>
-		          		<div class="col-sm-9">
+		          		<div>
 		          			<input type="text" name="contact-info" placeholder="By phone or email and what is a good time if by phone" class="form-control" id="contact-info">
 		          		</div>
 		          	</div>
-
-
 		            </div>
 		        </div>
 
@@ -142,12 +156,12 @@
 			        </div>
 
 			          <label class="checkbox-inline">
-			            <input name="subscribe" type="checkbox" value="subscribe" data-toggle="collapse" data-target="#email">
-			            Add me to your email list.</label>
-			        <div class="form-group collapse in" id="email">
-			          <label class="col-sm-2">Your email</label>
+			            <input name="subscribe" type="checkbox" value="subscribe" data-toggle="collapse" data-target="#mail">
+			            Add me to your mailing list.</label>
+			        <div class="form-group collapse in" id="mail">
+			          <label class="col-sm-2">Address or Email</label>
 			          <div class="col-sm-10">
-			            <input type="text" name="email" placeholder="Your email" class="form-control">
+			            <input type="text" name="mail" placeholder="Your mailing address or email" class="form-control">
 			          </div>
 			        </div>
 
@@ -163,10 +177,29 @@
 		</footer>
 	</div><!-- end container -->
 
+    <!-- modal window -->
+    
+	<div class="modal fade" id="myModal" tabindex="-1">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	        <h4 class="modal-title">Thank you!</h4>
+	      </div>
+	      <div class="modal-body">
+	        <p>Thanks for submitting the form! You will hear back from us shortly.</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+	      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
     
 <!-- javascript -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/myApps.js"></script>
     <!--tooltips, form-->
     <script>
     	$('textarea').tooltip();

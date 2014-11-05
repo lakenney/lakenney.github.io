@@ -74,9 +74,9 @@
 								Your name:
 								<span class="glyphicon glyphicon-star"></span>
 							</label>
-							<input type="text" id="name" class="form-control">
+							<input type="text" id="name" placeholder="Name" class="form-control">
           						<span class="help-block"></span>
-          				</div>
+          				</div><!--end name-->
 
 						<div class="col-sm-6 form-group email-group">
 							<label for="email" class="control-label">
@@ -84,14 +84,15 @@
 							</label>
 							<input type="text" id="email" placeholder="Email" class="form-control">
 							<span class="help-block"></span>
-						</div>
+						</div><!--end email-->
 
 					</div><!--end row-->
 
-		        <div class="form-group search-group">
+		        <div class="form-group">
 		          	<label class="checkbox-inline">
 					<input name="custom" type="checkbox" value="custom" data-toggle="collapse" data-target="#custom">
 		          		I'd like something custom made.</label>
+		          <div class="search-group">
 					<div class="form-group collapse in search-group" id="custom">
 
 			            <div class="radio">
@@ -115,6 +116,7 @@
 		              			<input type="radio" name="custom" value="soldering">
 		              			soldering</label>
 		              	</div>
+            		</div><!--end search-group-->
             			<span class="help-block"></span>
 
 		              	<div class="radio">
@@ -187,7 +189,7 @@
 	        <h4 class="modal-title">Thank you!</h4>
 	      </div>
 	      <div class="modal-body">
-	        <p>Thanks for submitting the form! You will hear back from us shortly.</p>
+	        <p>Thanks for contacting me. You will hear back from me shortly.</p>
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -200,13 +202,6 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/myApps.js"></script>
-    <!--tooltips, form-->
-    <script>
-    	$('textarea').tooltip();
-    	$('.form-group.collapse').collapse({
-    		height: '5000'
-    	});
-    </script>
 
 </body>
 </html>

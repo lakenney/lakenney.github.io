@@ -47,8 +47,8 @@
                     <li>
                       <a href="metal-clay.html">metal clay</a>
                     </li>
-                    <li><a href="#">sea glass</a></li>
-                    <li><a href="#">metal smithing</a></li>
+                    <li><a href="#" data-toggle="tooltip" title="Sea glass demos coming soon!">sea glass</a></li>
+                    <li><a href="#" data-toggle="tooltip" title="Metal smithing demos coming soon!">metal smithing</a></li>
                   </ul>
                 </li>
                 <li><a href="product.html" title="product">product</a></li>         
@@ -127,14 +127,9 @@
           <a href="http://www.metalwerx.com">Read more</a></p>
         </section>
 
-
       </aside>
     </div><!--end row 2-->
-
-
-
-
-
+    
     <footer class="row siteinfo">
       <p>All content &copy; Lucille Kenney</p>
     </footer>
@@ -143,5 +138,18 @@
 
 <!-- javascript -->
     <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script></body>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/myApps.js"></script>
+  </body>
+<script>
+  $(document).ready(function(){
+    console.log("Document loaded!");
+      $('aside section:even').css({
+      color: "dark-gray",
+      backgroundColor: "#ddd",
+      padding: "3px 3px"
+    }); //end aside filter
+  });//end ready
+</script>
+<body>
 </html>

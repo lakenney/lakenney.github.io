@@ -12,12 +12,18 @@ $(document).ready(function(){
 		});//end attr
 	});//end hover
 
+// Tool tip for navigation dropdown menu on pages yet to be created
+    	$('textarea').tooltip();
+// Collapse for contact.html page
+    	$('.form-group.collapse').collapse({
+    		height: '5000'
+    	});
 // See product panel on product.html page
 	$('#readMore-btn').click(function(){
 		$('.productPanel').replaceWith('<p>Maybe you\'re looking for something more elaborate such as a locket in fine silver.</p>');
 	});//end jumbotron img css
 
-// See form page, form-start-video2.html
+// See form-start-video2.html
 //	$('#searchengine').change(function(){
 //		if ($('#searchengine').val() == 'google')
 //		{
@@ -36,15 +42,15 @@ $(document).ready(function(){
 	$('input:radio').change(function(){
 		if ($('input:radio').val() == 'swarovski')
 		{
-			$('.search-group .help-block').text('Swarovski crystals sparkel');
+			$('.search-group .help-block').text('Swarovski crystals sparkle');
 		} else if ($('input:radio').val() == 'mirano') {
-			$('.search-group .help-block').text('Mirano crystals sparkel');
+			$('.search-group .help-block').text('Mirano crystals sparkle');
 		} else if ($('input:radio').val() == 'locket') {
 			$('.search-group .help-block').text('Lockets are awesome!');
 		} else if ($('input:radio').val() == 'solder') {
 			$('.search-group .help-block').text('Soldering Rock!');
 		}else {
-			$('.search-group .help-block').text('Say what?!');
+			$('.search-group .help-block').text('');
 		}
 	});//end change	
 

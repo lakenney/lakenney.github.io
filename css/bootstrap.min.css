@@ -6229,7 +6229,7 @@ a:focus {
   text-decoration: underline;
 }
 .panel a:hover {
-  tex-decoration: none;
+  text-decoration: none;
 }
 .panel a.btn-info {
   background-color: #eaf7f9;

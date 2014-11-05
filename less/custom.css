@@ -55,7 +55,7 @@ Some are overrides of existing Bootstrap styles, while others are new styles not
 			text-decoration: underline;
 		}
 		a:hover {
-			tex-decoration: none;
+			text-decoration: none;
 		}
 		a.btn-info {
 		background-color: lighten(@brand-info, 25%);

@@ -24,22 +24,22 @@ $(document).ready(function(){
 	});//end jumbotron img css
 
 // See form-start-video2.html
-//	$('#searchengine').change(function(){
-//		if ($('#searchengine').val() == 'google')
-//		{
-//			$('.search-group .help-block').text('Google Rocks!');
-//		} else if ($('#searchengine').val() == 'yahoo')
-//		{
-//			$('.search-group .help-block').text('Yohoo Rocks!');
-//		} else if ($('#searchengine').val() == 'bing') {
-//			$('.search-group .help-block').text('Bing Rocks!');
-//		} else {
-//			$('.search-group .help-block').text('Pick a real option!');
-//		}
-//	});//end change
+	$('#searchengine').change(function(){
+		if ($('#searchengine').val() == 'google')
+		{
+			$('.search-group .help-block').text('Google Rocks!');
+		} else if ($('#searchengine').val() == 'yahoo')
+		{
+			$('.search-group .help-block').text('Yohoo Rocks!');
+		} else if ($('#searchengine').val() == 'bing') {
+			$('.search-group .help-block').text('Bing Rocks!');
+		} else {
+			$('.search-group .help-block').text('Pick a real option!');
+		}
+	});//end change
 
 // Post text per value selected in form on contact.html page.
-	$('input:radio').click(function(){
+	$('input:radio').change(function(){
 		if ($('input:radio').val() == 'swarovski')
 		{
 			$('.request-custom .help-block').text('Swarovski crystals sparkle');

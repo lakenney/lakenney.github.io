@@ -6200,12 +6200,12 @@ a:focus {
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-.glyphicon {
-  color: #eeeeee;
+/*.glyphicon {
+	color: @glyphicon-color;
 }
 .active .glyphicon {
-  color: #86d3d3;
-}
+	color: #86d3d3;
+}*/
 .pull-right.img-responsive {
   margin: 0 0 1em 1em;
 }

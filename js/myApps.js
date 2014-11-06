@@ -39,20 +39,20 @@ $(document).ready(function(){
 //	});//end change
 
 // Post text per value selected in form on contact.html page.
-	$('input:radio').change(function(){
+	$('input:radio').click(function(){
 		if ($('input:radio').val() == 'swarovski')
 		{
-			$('.search-group .help-block').text('Swarovski crystals sparkle');
+			$('.request-custom .help-block').text('Swarovski crystals sparkle');
 		} else if ($('input:radio').val() == 'mirano') {
-			$('.search-group .help-block').text('Mirano crystals sparkle');
+			$('.request-custom .help-block').text('Mirano crystals sparkle');
 		} else if ($('input:radio').val() == 'locket') {
-			$('.search-group .help-block').text('Lockets are awesome!');
+			$('.request-custom .help-block').text('Lockets are awesome!');
 		} else if ($('input:radio').val() == 'solder') {
-			$('.search-group .help-block').text('Soldering Rock!');
+			$('.request-custom .help-block').text('Soldering Rock!');
 		}else {
-			$('.search-group .help-block').text('');
+			$('.request-custom .help-block').text('');
 		}
-	});//end change	
+	});//end click	
 
 // Validation for 'name' on form on contact.html page.
 	$('#name').focusout(function(){

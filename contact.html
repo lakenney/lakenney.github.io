@@ -73,13 +73,15 @@
 								Your name:<span class="glyphicon glyphicon-star"></span>
 							</label>
 							<input type="text" id="name" placeholder="Name" class="form-control">
-						</div><!--end name-->
+          						<span class="help-block"></span>
+          				</div><!--end name-->
 
 						<div class="col-sm-6 form-group email-group">
 							<label for="email" class="control-label">
 								Your email:<span class="glyphicon glyphicon-star"></span>
 							</label>
 							<input type="text" id="email" placeholder="Email" class="form-control">
+							<span class="help-block"></span>
 						</div><!--end email-->
 					</div><!--end row-->
 
@@ -89,32 +91,34 @@
 							I'd like something custom made.
 						</label>
 
-						<div class="form-group collapse in search-group" id="custom">
-							<div class="radio">
-								<label>
-									<input type="radio" name="custom" value="swarovski">
-									Swarovski necklace
-								</label>
-							</div><!--end radio-->
-							<div class="radio">
-								<label>
-									<input type="radio" name="custom" value="mirano">
-									Mirano glass
-								</label>
-							</div><!--end radio-->
-							<div class="radio">	
-								<label>
-									<input type="radio" name="custom" value="locket">
-									locket
-								</label>
-							</div><!--end radio-->
-							<div class="radio">
-								<label>
-									<input type="radio" name="custom" value="soldering">
-									soldering
-								</label>
-							</div>
-							<span class="help-block"></span>
+						<div class="form-group collapse in" id="custom">
+							<div class="request-custom">
+								<div class="radio">
+									<label>
+										<input type="radio" name="custom" value="swarovski">
+										Swarovski necklace
+									</label>
+								</div><!--end radio-->
+								<div class="radio">
+									<label>
+										<input type="radio" name="custom" value="mirano">
+										Mirano glass
+									</label>
+								</div><!--end radio-->
+								<div class="radio">	
+									<label>
+										<input type="radio" name="custom" value="locket">
+										locket
+									</label>
+								</div><!--end radio-->
+								<div class="radio">
+									<label>
+										<input type="radio" name="custom" value="soldering">
+										soldering
+									</label>
+								</div><!--end radio-->
+								<span class="help-block"></span>
+							</div><!--end request-custom-->
 
 							<div class="radio">
 								<label>
@@ -149,7 +153,8 @@
 								</div><!--end id contact-info-->
 							</div><!--end contact-info-->
 
-						</div><!--end search-group-->
+						</div><!--end-->
+					</div><!--end form-group-->
 
 						<div class="form-group">
 							<label for="comments" class="control-label">Comments:</label>

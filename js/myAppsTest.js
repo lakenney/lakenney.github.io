@@ -20,7 +20,7 @@ $(document).ready(function(){
     	});
 // See product panel on product.html page
 	$('#readMore-btn').click(function(){
-		$('.productPanel').replaceWith('<p>Maybe you\'re looking for something more elaborate such as a locket in fine silver.</p>')
+		$('.productPanel').replaceWith('<p>Maybe you\'re looking for something more elaborate such as a locket in fine silver.</p>');
 	});//end jumbotron img css
 
 // See form-start-video2.html
@@ -69,6 +69,8 @@ $(document).ready(function(){
 		}
 	});// end focus out
 
+/*
+	Needs further development to get myModal to post independantly of name or email.
 // Validation for 'email' form on contact.html page.
 	$('#email').focusout(function(){
 		if ($('#email').val().length == 0) {
@@ -86,9 +88,9 @@ $(document).ready(function(){
 
 // Validation modal window for submit
 	$('button').click(function(submit){
-		if ($('#name').val().length == 0) {
-			$('.name-group .help-block').text('This is a required field');
-			$('.name-group').attr({
+		if ($('#name').val().length == 0 || $('#email').val().length == 0) {
+			$('.name-group .help-block, .email-group .help-block').text('This is a required field');
+			$('.name-group, .email-group').attr({
 				class: 'col-sm-6 form-group name-group has-error'
 			});// end css attr
 			submit.preventDefault();
@@ -97,5 +99,7 @@ $(document).ready(function(){
 			submit.preventDefault();
 		}
 	});//end click
+*/
+
 
 });//end ready

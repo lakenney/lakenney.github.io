@@ -16,7 +16,7 @@ $(document).ready(function(){
 			opacity: '0.25',
 			height: 'toggle',
 		}, 5000, 'swing', function(){
-			$('#cherry-image').css({
+			$('#cherry-img').css({
 				opacity: '1'
 			});//end cherry image css
 			$('#cherry-btn').css({

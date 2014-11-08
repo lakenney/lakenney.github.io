@@ -4,12 +4,15 @@ $(document).ready(function(){
 // See index page for jumbotron-img
 	$('#jumbotron-img').hover(function(){
 		$('#jumbotron-img').attr({
+			'src' : 'img/lucille.jpg',
 			'class' : 'pull-right img-responsive img-circle'
 		}).fadeTo(2000, 0.5);//end attr
-		}, function(){
+		}, // end mouse over
+		function(){
 		$('#jumbotron-img').attr({
+			'src' : 'img/lucille-l.jpg',
 			'class' : 'pull-right img-responsive img-rounded'
-		}).fadeTo(2000, 1.0);;//end attr
+		}).fadeTo(1000, 1.0);;//end attr
 	});//end hover
 
 // Tool tip for navigation dropdown menu on pages yet to be created
@@ -21,7 +24,7 @@ $(document).ready(function(){
 // See product panel on product.html page
 	$('#readMore-btn').click(function(){
 		$('.productPanel').replaceWith('<p>Maybe you\'re looking for something more elaborate such as a locket in fine silver.</p>')
-	});//end jumbotron img css
+	});//end btn click
 
 // See form-start-video2.html
 	$('#searchengine').change(function(){

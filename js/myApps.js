@@ -23,7 +23,8 @@ $(document).ready(function(){
     	});
 // See product panel on product.html page
 	$('#readMore-btn').click(function(){
-		$('.productPanel').replaceWith('<p>Maybe you\'re looking for something more elaborate such as a locket in fine silver.</p>')
+		$('.productPanel').replaceWith('<p>Maybe you\'re looking for something more elaborate such as a locket in fine silver.</p>');
+		alert('I love metal clay!')
 	});//end btn click
 
 // See form-start-video2.html
